@@ -450,32 +450,30 @@ button {
   padding: 40px;
 }
 
-.free-card-container {
+.card-container {
   display: flex;
   flex-direction: column;
   row-gap: 17px;
 }
 
-.free-text,
-.personal-text {
+.card-title {
   font-style: 100;
   font-weight: 600;
   font-size: medium;
 }
 
-.dollar-text {
+.card-price {
   font-size: 27px;
   font-weight: bold;
 }
 
-.personal-dollar-text {
+.highlight .card-price {
   font-size: 27px;
   font-weight: bold;
   color: #ffe492;
 }
 
-.capture-text,
-.keep-text {
+.card-subtitle {
   font-weight: 500;
 }
 .yellow-line-image5 {
@@ -487,8 +485,7 @@ button {
   top: 9px;
 }
 
-.free-card-paragraphs,
-.personal-card-paragraphs {
+.card-feature {
   display: flex;
   align-items: center;
   column-gap: 13px;
@@ -497,8 +494,7 @@ button {
   line-height: 18px;
 }
 
-.free-card-paragraphs-container,
-.personal-card-paragraphs-container {
+.card-feature-container {
   display: flex;
   flex-direction: column;
 }
@@ -507,7 +503,7 @@ button {
   height: 15px;
 }
 
-.free-card-button {
+.card-button {
   padding-block: 10px;
   background-color: white;
   padding-inline: 25px;
