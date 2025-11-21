@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: inter;
+        margin: 0;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border: none;
+        background-color: #043873;
+        padding-block: 20px;
+      }
+
+      .header-container,
+      .hero-section-container,
+      .hero-section2-container,
+      .hero-section3-container,
+      .hero-section4-container,
+      .hero-section5-container,
+      .hero-section6-container,
+      .hero-section7-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        flex-direction: row;
+        max-width: 1170px;
+        width: 100%;
+      }
+
+      .WhiteSpace-logo {
+        height: 32px;
+        width: 189px;
+      }
+      .header-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: px;
+      }
+
+      .white-small-buttons {
+        display: flex;
+      }
+
+      .arrow-image {
+        background-color: #043873;
+        border: none;
+        height: 20px;
+        padding-right: 10px;
+      }
+      .products-button,
+      .solutions-button,
+      .resources-button,
+      .pricing-button {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+        background-color: #043873;
+        color: white;
+        border: none;
+        align-items: center;
+      }
+
+      .login-button {
+        background-color: #ffe492;
+        font-weight: 500;
+        size: 18px;
+        border: none;
+        padding-inline: 25px;
+        padding-block: 16px;
+        border-radius: 8px;
+        margin-left: 8px;
+      }
+
+      .try-whitespace-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4f9cf9;
+        color: white;
+        padding-inline: 15px;
+        padding-block: 16px;
+        border-radius: 8px;
+        border: none;
+        margin-left: 10px;
+      }
+
+      .try-whitespace-button2 {
+        display: flex;
+        align-items: center;
+        background-color: #4f9cf9;
+        color: white;
+        padding-inline: 15px;
+        padding-block: 16px;
+        border-radius: 8px;
+        border: none;
+        margin-left: 0px;
+      }
+
+      .hero-section {
+        background-image: url("./Images/BACKGROUND1.png");
+        background-size: 1690px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border: none;
+        background-color: #043873;
+        height: 720px;
+      }
+
+      .right-arrow {
+        padding-left: 5px;
+        height: 12px;
+      }
+
+      .container-image {
+        background-color: #c4defd;
+        width: 824px;
+        height: 450px;
+      }
+
+      .container-2-text1 {
+        font-weight: 600;
+        font-size: small;
+        color: #ffffff;
+        font-style: bold;
+        font-size: 50px;
+        letter-spacing: 0px;
+        line-height: 100%;
+        width: 536px;
+        margin-block: 10px;
+      }
+
+      .container-2-text2 {
+        font-size: small;
+        color: #ffffff;
+        width: 500px;
+        padding-bottom: 20px;
+        line-height: 25px;
+      }
+
+      .container-2-left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 280px;
+        width: 536px;
+      }
+
+      /* .hero-section2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 700px;a
+      } */
+
+      .hero-section2-left-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+        align-items: baseline;
+      }
+
+      .container2-image {
+        background-color: #c4defd;
+        background-position: center;
+        width: 556px;
+        height: 450px;
+      }
+      /*
+      .hero-section2-container,
+      .hero-section4-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1170px;
+        width: 100%;
+      } */
+
+      .container3-text {
+        position: relative;
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 20px;
+        width: 0px;
+      }
+
+      .container3-text2 {
+        width: 503px;
+        line-height: 24px;
+        font-size: small;
+        margin: 0;
+      }
+
+      .get-started-button {
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        background-color: #4f9cf9;
+        color: white;
+        padding-block: 16px;
+        border: none;
+        margin-top: 51px;
+        padding-inline: 38px;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .yellow-line-image {
+        z-index: -1;
+        height: 48px;
+        width: 460px;
+        position: absolute;
+        top: 77px;
+        left: 0;
+      }
+
+      .login-try-whitespace-buttons {
+        display: flex;
+      }
+
+      .hero-section2-background {
+        position: absolute;
+        left: 0;
+        top: 250px;
+        width: 350px;
+      }
+
+      .hero-section3,
+      .hero-section2,
+      .hero-section5,
+      .hero-section6, 
+      .hero-section8,
+      .hero-section9
+      {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 500px;
+      }
+
+      /*
+      .hero-section3-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1170px;
+        width: 100%;
+      } */
+
+      .container-img3 {
+        transform: rotate(90deg);
+        height: 490px;
+        object-fit: contain;
+        width: 50%;
+      }
+
+      .herosection-3-right-section,
+      .herosection-4-right-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+        width: 50%;
+      }
+
+      .work-together-text,
+      .customise-it-text {
+        position: relative;
+        font-weight: bold;
+        font-size: 46px;
+        width: 326px;
+      }
+      .try-it-now-button {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        background-color: #4f9cf9;
+        color: white;
+        padding-block: 15px;
+        border: none;
+        margin: 0;
+        padding-inline: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      
+      .herosection-2-textbox,
+      .herosection-3-textbox,
+      .herosection-4-textbox,
+      .hero-section5-textbox 
+       {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+
+      .with-whitespace-text {
+        font-size: small;
+        line-height: 20px;
+        width: 495px;
+      }
+
+      .yellow-line-image2 {
+        z-index: -1;
+        height: 28px;
+        position: absolute;
+        top: 28px;
+        left: 128px;
+        width: 298px;
+      }
+
+      .hero-section4 {
+        background-color: #043873;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 700px;
+        margin-top: 80px;
+      }
+
+      .container4-text {
+        position: relative;
+        color: #ffffff;
+        z-index: 1;
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      .container4-text2 {
+        color: #ffffff;
+        width: 503px;
+        line-height: 24px;
+        font-size: small;
+        padding-bottom: 36px;
+      }
+
+      .yellow-line-image3 {
+        z-index: -1;
+        height: 33px;
+        position: absolute;
+        bottom: 0;
+        right: 8px;
+      }
+
+      .Lets-Go-button {
+        display: flex;
+        align-items: center;
+        background-color: #4f9cf9;
+        color: white;
+        padding-block: 16px;
+        border: none;
+        margin: 0;
+        padding-inline: 31px;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .container4-image {
+        background-color: #c4defd;
+        background-position: center;
+        width: 556px;
+        height: 450px;
+      }
+
+      .yellow-line-image4 {
+        z-index: -1;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        left: -8px;
+      }
+
+      .plan-header-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 16px;
+      }
+
+      .plan-header-text1 {
+        position: relative;
+        font-weight: bold;
+        font-size: 46px;
+        width: 380px;
+      }
+
+      .plan-header-text2 {
+        font-size: small;
+        line-height: 20px;
+        width: 90%;
+      }
+
+      .plan-header-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 140px;
+      }
+
+      .plan-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 700px;
+      }
+
+      .plan-section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        flex-direction: row;
+        max-width: 1170px;
+        width: 100%;
+      }
+
+      .free-card,
+      .organization-card {
+        border: 1px solid #ffe492;
+        border-radius: 10px;
+        width: 288px;
+        height: 422px;
+        padding: 40px;
+      }
+
+      .personal-card {
+        background-color: #043873;
+        color: white;
+        width: 290px;
+        height: 522px;
+        border-radius: 10px;
+        padding: 40px;
+      }
+
+      .free-card-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+      }
+
+      .free-text,
+      .personal-text {
+        font-style: 100;
+        font-weight: 600;
+        font-size: medium;
+      }
+
+      .dollar-text {
+        font-size: 27px;
+        font-weight: bold;
+      }
+
+      .personal-dollar-text {
+        font-size: 27px;
+        font-weight: bold;
+        color: #ffe492;
+      }
+
+      .capture-text,
+      .keep-text {
+        font-weight: 500;
+      }
+      .yellow-line-image5
+      {
+        position: absolute;
+        z-index: -1;
+        width: 287px;
+        height: 50px;
+        left: 181px;
+        top: 9px;
+      }
+
+      .free-card-paragraphs,
+      .personal-card-paragraphs {
+        display: flex;
+        align-items: center;
+        column-gap: 13px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      .free-card-paragraphs-container,
+      .personal-card-paragraphs-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .icons-img {
+        height: 15px;
+      }
+
+      .free-card-button {
+        padding-block: 10px;
+        background-color: white;
+        padding-inline: 25px;
+        border: 1px solid #ffe492;
+        border-radius: 7px;
+      }
+
+      .personal-card-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+      }
+
+      .personal-card-button {
+        background-color: #4f9cf9;
+        color: white;
+        padding-block: 12px;
+        border: none;
+        padding-inline: 30px;
+        border-radius: 6px;
+        font-size: 12px;
+      }
+
+.your-work-section {
+  height: 516px;
+  position: relative;
+  color: white;
+  background-color: #043873;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+}
+
+.your-work-section-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 865px;
+    width: 100%;
+}
+
+.your-work-text {
+  position: relative;
+  font-size: 57px;
+  margin: 0;
+  
+}
+
+.access-text {
+font-size: 13px;
+    width: 806px;
+}
+
+.try-taskey-button,
+.read-more-button,
+.try-taskey-button {
+  display: flex;
+  align-items: center;
+  background-color: #4f9cf9;
+    color: white;
+    padding-block: 16px;
+    border: none;
+    margin: 0;
+    padding-inline: 31px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-top: 35px;
+    column-gap: 5px;
+}
+
+.background-your-section {
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  height: 700px;
+}
+
+.blue-line{
+    position: absolute;
+    bottom: 0;
+    height: 16px;
+    right: -13px;
+    z-index: -1;
+    width: 219px;
+}
+
+.your-data-text,
+.sponsor-text {
+  position: relative;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.the-app-text {
+  font-size: small;
+  line-height: 20px;
+}
+
+.Section5-img {
+  height: 250px;
+}
+
+.yellow-line-image6 {
+    position: absolute;
+    z-index: -1;
+    width: 292px;
+    height: 54px;
+    left: 140px;
+    top: 12px;
+}
+
+.our-sponsor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    margin-bottom: 100px;
+}
+
+.sponsor-images {
+    row-gap: 10px;
+    display: flex;
+    column-gap: 139px;
+    height: 50px;
+}
+
+.yellow-line-image7 {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  height: 68px;
+  left: 97px;
+}
+
+.hero-section6 {
+  display: flex;
+  background-color: #043873;
+  height: 600px;
+  position: relative;
+  background-image: url("Images/Background3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.apps-image {
+  height: 380px;
+  padding-top: 26px;
+}
+
+.work-with-text { 
+  color: white;
+  font-weight: bold;
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+
+.white-space-terms {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.text-button-container {
+  width: 50%;
+}
+
+.section7-column-gap {
+  column-gap: 20px;
+  max-width: 1100px;
+}
+
+.clients-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  font-weight: bold;
+  font-size: 58px;
+  position: relative;
+}
+
+.card1 {
+        padding-inline: 16px;
+    padding-block: 56px;
+    box-shadow: 10px 0px 36px -25px;
+    border-radius: 10px;
+}
+
+.card2,
+.card3 {
+      padding-inline: 16px;
+  padding-block: 56px;
+  background-color: #4F9CF9;
+  padding-block: 56px;
+  box-shadow: 10px 0px 36px -25px;
+  border-radius: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  height: 9px;
+}
+
+.clients-yellow-arrow {
+  position: absolute;
+  z-index: -1;
+  right: 340px;
+  height: 72px;
+  width: 272px;
+  top: -11px;
+}
+
+.card1-img,
+.card3-img,
+.card2-img {
+  height: 50px;
+}
+
+.card2,
+.card3 {
+color: white; 
+}
+
+.card1-text {
+  border-bottom: solid;
+  width: 331px;
+  font-size: 14px;
+  padding-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 30px;
+}
+
+/* .card1-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 17px;
+    flex-wrap: wrap;
+} */
+
+.oberson-name {
+margin-bottom: 0x;
+}
+
+.oberon-bottom-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.oberon-image {
+  height: 68px;
+}
+
+.oberon-title {
+  font-size: 12px;
+  width: 190px;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+cursor: pointer;
+}
+
+
+.try-whitespace-seciton {
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-section9 {
+  background-color: #043873;
+  margin-top: 95px;
+}
+
+.try-whitespace-text,
+.today-text {
+  color: white;
+    font-size: 58px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.get-started-text,
+.add-your-team-text {
+  color: white;
+  margin: 0;
+}
+.on-a-team {
+color: white;
+margin-top: 15px;
+}
+
+.apple-img,
+.windows-img,
+.android-img {
+height: 45px;
+}
+
+.section7-imgs {
+  display: flex;
+  flex-direction: row;
+  column-gap: 35px;
+}
+
+    </style>
+  </head>
+  <body style="margin-bottom: 1000px;">
+    <title>WhiteSpace</title>
+    <div class="header">
+      <div class="header-container">
+        <img class="WhiteSpace-logo" src="Images/whitespace.png" />
+        <div class="header-buttons">
+          <div class="white-small-buttons">
+            <button class="products-button">
+              Products <img class="arrow-image" src="Images/arrow.png" />
+            </button>
+
+            <button class="solutions-button">
+              Solutions <img class="arrow-image" src="Images/arrow.png" />
+            </button>
+
+            <button class="resources-button">
+              Resources <img class="arrow-image" src="Images/arrow.png" />
+            </button>
+
+            <button class="pricing-button">
+              Pricing <img class="arrow-image" src="Images/arrow.png" />
+            </button>
+          </div>
+          <div class="login-try-whitespace-buttons">
+            <button class="login-button">Login</button>
+            <button class="try-whitespace-button">
+              Try WhiteSpace Free
+              <img class="right-arrow" src="Images/right-arrow.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-section-container">
+        <div class="container-2-left-section">
+          <p class="container-2-text1">Get More Done with whitepace</p>
+          <p class="container-2-text2">
+            Project management software that enables your teams to collaborate,
+            plan, analyze and manage everyday tasks
+          </p>
+          <button class="try-whitespace-button2">
+            Try WhiteSpace Free
+            <img class="right-arrow" src="Images/right-arrow.png" />
+          </button>
+        </div>
+        <div class="container-image">a</div>
+      </div>
+    </div>
+
+    <div class="hero-section2">
+      <img class="hero-section2-background" src="./images/BACKGROUND2.png" />
+      <div class="hero-section2-container">
+        <div class="hero-section2-left-section">
+          <div class="herosection-2-textbox">
+            <p class="container3-text">
+              Project Management
+              <img class="yellow-line-image" src="Images/Element.png" />
+            </p>
+            <p class="container3-text2">
+              Images, videos, PDFs and audio files are supported. Create math
+              expressions and diagrams directly from the app. Take photos with
+              the mobile app and save them to a note.
+            </p>
+          </div>
+          <button class="get-started-button">
+            Get Started <img class="right-arrow" src="Images/right-arrow.png" />
+          </button>
+        </div>
+        <div class="container2-image">a</div>
+      </div>
+    </div>
+
+    <div class="hero-section3">
+      <div class="hero-section3-container">
+        <img class="container-img3" src="Images/Work Together Image.png" />
+        <div class="herosection-4-right-section">
+          <div class="herosection-3-textbox">
+            <div class="work-together-text">
+              Work together
+              <img class="yellow-line-image2" src="Images/Element.png" />
+            </div>
+            <div class="with-whitespace-text">
+              With whitepace, share your notes with your colleagues and
+              collaborate on them. You can also publish a note to the internet
+              and share the URL with others.
+            </div>
+          </div>
+          <div>
+            <button class="try-it-now-button">
+              Try it now
+              <div class="image3-div">
+                <img class="right-arrow" src="Images/right-arrow.png" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-section4">
+      <div class="hero-section4-container">
+        <div class="left-herosection4">
+          <p class="container4-text">
+            Use as Extension
+            <img class="yellow-line-image3" src="Images/Element.png" />
+          </p>
+          <p class="container4-text2">
+            Use the web clipper extension, available on Chrome and Firefox, to
+            save web pages or take screenshots as notes.
+          </p>
+          <button class="Lets-Go-button">
+            Let's Go <img class="right-arrow" src="Images/right-arrow.png" />
+          </button>
+        </div>
+        <div class="container4-image">a</div>
+      </div>
+    </div>
+
+    <div class="hero-section3">
+      <div class="hero-section3-container">
+        <div class="container4-image">a</div>
+        <div class="herosection-3-right-section">
+          <div class="herosection-4-textbox">
+            <div class="customise-it-text">
+              Customise it to your needs
+              <img class="yellow-line-image4" src="Images/Element.png" />
+            </div>
+            <div class="with-whitespace-text">
+              Customise the app with plugins, custom themes and multiple text
+              editors (Rich Text or Markdown). Or create your own scripts and
+              plugins using the Extension API.
+            </div>
+          </div>
+          <div>
+            <button class="Lets-Go-button">
+              Let's Go
+              <div class="image3-div">
+                <img class="right-arrow" src="Images/right-arrow.png" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="plan-header-div">
+      <div class="plan-header-section">
+        <div class="plan-header-text1">
+          Choose Your Plan
+          <img class="yellow-line-image5" src="Images/Element.png" />
+        </div>
+        <div class="plan-header-text2">
+          Whether you want to get organized, keep your personal life on track,
+          or boost workplace productivity, Evernote has the right plan for you.
+        </div>
+      </div>
+    </div>
+
+    <div class="plan-section">
+      <div class="plan-section-container">
+        <div class="free-card">
+          <div class="free-card-container">
+            <div class="free-text">Free</div>
+            <div class="dollar-text">$0</div>
+            <div class="capture-text">Capture ideas and find them quickly</div>
+          </div>
+
+          <div class="free-card-paragraphs-container">
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />Sync unlimited
+              devices
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />10 GB monthly
+              uploads
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />200 MB max. note
+              size
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />
+              Customize Home dashboard and access extra widgets
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />
+              Connect primary Google Calendar account
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />
+              Add due dates, reminders, and notifications to your tasks 
+            </p>
+          </div>
+          <button class="free-card-button">Get Started</button>
+        </div>
+
+        <div class="personal-card">
+          <div class="personal-card-container">
+            <p class="personal-text">Personal</p>
+            <div class="personal-dollar-text">11.99$</div>
+            <p class="keep-text">Keep home and family on track</p>
+          </div>
+          <div class="personal-card-paragraphs-container">
+            <p class="personal-card-paragraphs">
+              <img class="icons-img" src="Images/Golden-icon.png" />Sync
+              unlimited devices
+            </p>
+            <p class="personal-card-paragraphs">
+              <img class="icons-img" src="Images/Golden-icon.png" />10 GB
+              monthly uploads
+            </p>
+            <p class="personal-card-paragraphs">
+              <img class="icons-img" src="Images/Golden-icon.png" />200 MB max.
+              note size
+            </p>
+            <p class="personal-card-paragraphs">
+              <img class="icons-img" src="Images/Golden-icon.png" />
+              Customize Home dashboard and access extra widgets
+            </p>
+            <p class="personal-card-paragraphs">
+              <img class="icons-img" src="Images/Golden-icon.png" />
+              Connect primary Google Calendar account
+            </p>
+            <p class="personal-card-paragraphs">
+              <img class="icons-img" src="Images/Golden-icon.png" />
+              Add due dates, reminders, and notifications to your tasks
+            </p>
+          </div>
+          <button class="personal-card-button">Get Started</button>
+        </div>
+
+        <div class="organization-card">
+           <div class="free-card-container">
+            <div class="free-text">Organization</div>
+            <div class="dollar-text">$49.99</div>
+            <div class="capture-text">Capture ideas and find them quickly</div>
+          </div>
+               <div class="free-card-paragraphs-container">
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />Sync unlimited
+              devices
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />10 GB monthly
+              uploads
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />200 MB max. note
+              size
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />
+              Customize Home dashboard and access extra widgets
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" /> 
+              Connect primary Google Calendar account
+            </p>
+            <p class="free-card-paragraphs">
+              <img class="icons-img" src="Images/Icon.png" />
+              Add due dates, reminders, and notifications to your tasks
+            </p>
+          </div>
+          <button class="free-card-button">Get Started</button>
+        </div>
+       </div>
+      </div>
+    </div>
+
+<div class="your-work-section"> <img class="background-your-section" src="Images/BACKGROUND-.png">
+  <div class="your-work-section-container">
+  <h1 class="your-work-text">Your work, everywhere you are <img class="blue-line" src="Images/blue line.png"></h1>
+  <p class="access-text">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, 
+    Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
+    </div>
+<button class="try-taskey-button">Try Taskey <img src="Images/right-arrow.png"></button>
+</div>
+
+<div class="hero-section5">
+  <div class="hero-section5-container">
+  <div>
+    <div class="hero-section5-textbox">
+      <div class="your-data-text">100% your data <img class="yellow-line-image6" src="Images/Element.png"></div>
+      <div class="the-app-text">The app is open source and your notes are saved to an open format, 
+        so you'll always have access to them. Uses End-To-End Encryption (E2EE) 
+        to secure your notes and ensure no-one but yourself can access them.</div>
+    </div>
+        <button class="read-more-button">Read more <img src="Images/right-arrow.png"></button>
+  </div>
+<img class="Section5-img" src="Images/Section5-img.png">
+  </div>
+</div>
+
+<div class="section">
+  <div class="our-sponsor-container">
+    <div class="sponsor-text">Our sponsors <img class="yellow-line-image7" src="Images/Element.png"></div>
+    <div class="sponsor-images">
+      <img src="Images/Apple.png"> 
+      <img src="Images/microsoft 1.png"> 
+      <img src="Images/Slack_Technologies_Logo 1.png"> 
+      <img src="Images/Google-img.png"></div>
+  </div>
+</div>
+
+<div class="hero-section6">
+  
+  <div class="hero-section6-container">
+    <img class="apps-image" src="Images/Apps-image.png">
+    <div class="text-button-container">
+      <div>
+      <p class="work-with-text">Work with Your Favorite Apps Using whitepace</p>
+      <p class="white-space-terms">Whitepace teams up with your favorite software. 
+        Integrate with over 1000+ apps with Zapier to have all the 
+        tools you need for your project success.</p>
+        </div>
+      <button class="read-more-button">Read more <img src="Images/right-arrow.png"></button>
+    </div>
+  </div>
+</div>
+
+<div class="hero-section7">
+  <p class="clients-text">What Our Clients Says <img class="clients-yellow-arrow" src="Images/Element.png"></p>
+  <div class="hero-section8">
+  <div class="hero-section7-container section7-column-gap" >
+    <div class="card1">
+      <div>
+       <img class="card1-img" src="Images/Group.png">
+      <p class="card1-text">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+     </div>
+     <div class="oberon-bottom-section">
+      <img class="oberon-image" src="Images/Oberon-img.png">
+      <div>
+        <p class="oberson-name">Oberon Shaw, MCH</p>
+        <p class="oberon-title">Head of Talent Acquisition, North America</p>
+      </div>
+     </div>
+    </div>
+    
+        <div class="card2">
+      <div>
+       <img class="card2-img" src="Images/white-quote.png">
+      <p class="card1-text">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+     </div>
+     <div class="oberon-bottom-section">
+      <img class="oberon-image" src="Images/card2-img.png">
+      <div>
+        <p class="oberson-name">Oberon Shaw, MCH</p>
+        <p class="oberon-title">Head of Talent Acquisition, North America</p>
+      </div>
+     </div>
+    </div>  
+
+
+            <div class="card3">
+      <div>
+       <img class="card3-img" src="Images/white-quote.png">
+      <p class="card1-text">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+     </div>
+     <div class="oberon-bottom-section">
+      <img class="oberon-image" src="Images/card3-img.png">
+      <div>
+        <p class="oberson-name">Oberon Shaw, MCH</p>
+        <p class="oberon-title">Head of Talent Acquisition, North America</p>
+      </div>
+     </div>
+    </div>  
+
+
+    </div>
+  </div>
+  <div class="dots">
+    <img class="dot1" src="Images/slider-blue-dot.png"> 
+    <img class="dot2" src="Images/slider-blue-dot.png"> 
+    <img class="dot3" src="Images/slider-blue-dot.png">
+  </div>
+</div>
+
+<div class="hero-section9"> 
+  <div class="try-whitespace-seciton">
+    <p class="try-whitespace-text">Try Whitespace</p>
+    <p class="today-text">today</p>
+    <p class="get-started-text">Get started for free.</p>
+    <p class="add-your-team-text">Add your whole team as your needs grow.</p>
+    <button class="try-taskey-button">Try Taskey Free <img src="Images/right-arrow.png"></button>
+    <p class="on-a-team">On a big team? Contact sales</p>
+    <div class="section7-imgs">
+    <img class="apple-img" src="Images/apple-black-logo 2.png"> 
+    <img class="windows-img" src="Images/windows-img.png"> 
+    <img class="android-img" src="Images/android-img.png">
+  </div>
+  </div>
+</div>
+
+  </body>
+</html>
