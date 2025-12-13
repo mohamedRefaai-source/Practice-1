@@ -55,11 +55,11 @@ button {
   padding-right: 10px;
 }
 
-/* header-buttons */
-.products-button,
+/* .products-button,
 .solutions-button,
-.resources-button,
-.pricing-button {
+.resources-button { */
+.header-buttons {
+  position: relative;
   display: flex;
   flex-direction: row;
   column-gap: 5px;
@@ -67,6 +67,26 @@ button {
   color: white;
   border: none;
   align-items: center;
+}
+
+.drop-down-list {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  background-color: grey;
+  border-radius: 5px;
+  padding: 5px;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.drop-down-list.show {
+  display: block;
+}
+
+.drop-down {
+  padding: 5px;
 }
 
 .login-button {
@@ -691,18 +711,20 @@ button {
   position: relative;
 }
 
-.card1 {
+.client-card {
+  color: white;
   padding-inline: 16px;
+  padding-block: 56px;
+  background-color: #4f9cf9;
   padding-block: 56px;
   box-shadow: 10px 0px 36px -25px;
   border-radius: 10px;
 }
 
-.card2,
-.card3 {
+.highlight-client-card.client-card {
+  background-color: white;
+  color: black;
   padding-inline: 16px;
-  padding-block: 56px;
-  background-color: #4f9cf9;
   padding-block: 56px;
   box-shadow: 10px 0px 36px -25px;
   border-radius: 10px;
@@ -819,4 +841,12 @@ button {
   display: flex;
   flex-direction: row;
   column-gap: 35px;
+}
+
+.client-card svg path {
+  fill: white;
+}
+
+.highlight-client-card svg path {
+  fill: #043873;
 }

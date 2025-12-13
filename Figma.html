@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,7 +10,7 @@
     />
 
     <link rel="stylesheet" href="Figma.css">
-  
+    
   </head>
   <body style="margin-bottom: 1000px;">
     <title>WhiteSpace</title>
@@ -19,19 +20,29 @@
         <div class="header-buttons">
           <div class="white-small-buttons">
             <!-- TODO:  el zarayer kolaha el mafrod ykono same class since en kolohom nafs el shakl bzbt -->
-            <button class="products-button">
+            <button class="header-buttons">
               Products <img class="arrow-image" src="Images/arrow.png" />
             </button>
 
-            <button class="solutions-button">
+            <button class="header-buttons">
               Solutions <img class="arrow-image" src="Images/arrow.png" />
             </button>
 
-            <button class="resources-button">
+            <button class="drop-down-button header-buttons">
+              <div class="drop-down-list">
+              <div class="drop-down">Free</div>
+              <div class="drop-down">$11.99</div>
+              <div class="drop-down">$49.99</div> 
+                </div>
               Resources <img class="arrow-image" src="Images/arrow.png" />
             </button>
 
-            <button class="pricing-button">
+            <button class="drop-down-button header-buttons">
+              <div class="drop-down-list">
+              <div class="drop-down">Free</div>
+              <div class="drop-down">$11.99</div>
+              <div class="drop-down">$49.99</div> 
+                </div>
               Pricing <img class="arrow-image" src="Images/arrow.png" />
             </button>
           </div>
@@ -60,7 +71,7 @@
             <img class="right-arrow" src="Images/right-arrow.png" />
           </button>
         </div>
-        <div class="container-image">a</div>
+        <div class="container-image"></div>
       </div>
     </div>
 
@@ -83,7 +94,7 @@
             Get Started <img class="right-arrow" src="Images/right-arrow.png" />
           </button>
         </div>
-        <div class="container2-image">a</div>
+        <div class="container2-image"></div>
       </div>
     </div>
 
@@ -129,13 +140,13 @@
             Let's Go <img class="right-arrow" src="Images/right-arrow.png" />
           </button>
         </div>
-        <div class="container4-image">a</div>
+        <div class="container4-image"></div>
       </div>
     </div>
 
     <div class="hero-section3">
       <div class="hero-section3-container">
-        <div class="container4-image">a</div>
+        <div class="container4-image"></div>
         <div class="herosection-3-right-section">
           <div class="herosection-4-textbox">
             <div class="customise-it-text">
@@ -221,10 +232,11 @@
           </div>
           <button class="card-button">Get Started</button>
         </div>
+
   <div class="card highlight">
           <div class="card-container">
-            <div class="card-title">Free</div>
-            <div class="card-price">$50</div>
+            <div class="card-title">Personal</div>
+            <div class="card-price">$11.99</div>
             <div class="card-subtitle">Capture ideas and find them quickly</div>
           </div>
 
@@ -258,8 +270,8 @@
         </div>
   <div class="card">
           <div class="card-container">
-            <div class="card-title">Free</div>
-            <div class="card-price">$0</div>
+            <div class="card-title">Organization</div>
+            <div class="card-price">$49.99</div>
             <div class="card-subtitle">Capture ideas and find them quickly</div>
           </div>
 
@@ -460,10 +472,14 @@
 
 <!-- TODO: Nafs el kalam bta3 el cards bta3t el pricing enta classes should be client-card we client-card-highlighted masalan  -->
  
-    <div class="hero-section7-container section7-column-gap" >
-    <div class="card1">
+    <div class="hero-section7-container section7-column-gap my-slider" >
       <div>
-       <img class="card1-img" src="Images/Group.png">
+    <div class="client-card highlight-client-card" >
+      <div>
+             <svg width="86" height="62" viewBox="0 0 86 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M86 12.686L83.241 0C63.3756 0.910025 49.6051 9.17535 49.6051 33.4821V61.4603H84.3105V26.2958H71.1667C71.167 18.4966 76.0605 13.9093 86 12.686Z" fill="white"/>
+<path d="M36.3949 12.686L33.6359 0C13.7705 0.910025 0 9.17558 0 33.4823V61.4605H34.7068V26.2958H21.5548C21.5548 18.4966 26.4483 13.9093 36.3949 12.686Z" fill="white"/>
+</svg>
       <p class="card1-text">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
      </div>
      <div class="oberon-bottom-section">
@@ -474,10 +490,16 @@
       </div>
      </div>
     </div>
+    </div>
     
-        <div class="card2">
+    <div>
+        <div class="client-card">
       <div>
-       <img class="card2-img" src="Images/white-quote.png">
+       <svg class="qoutes-svg" width="86" height="62" viewBox="0 0 86 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M86 12.686L83.241 0C63.3756 0.910025 49.6051 9.17535 49.6051 33.4821V61.4603H84.3105V26.2958H71.1667C71.167 18.4966 76.0605 13.9093 86 12.686Z" fill="white"/>
+<path d="M36.3949 12.686L33.6359 0C13.7705 0.910025 0 9.17558 0 33.4823V61.4605H34.7068V26.2958H21.5548C21.5548 18.4966 26.4483 13.9093 36.3949 12.686Z" fill="white"/>
+</svg>
+
       <p class="card1-text">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
      </div>
      <div class="oberon-bottom-section">
@@ -488,11 +510,15 @@
       </div>
      </div>
     </div>  
+    </div>
 
-
-            <div class="card3">
+<div>
+            <div class="client-card">
       <div>
-       <img class="card3-img" src="Images/white-quote.png">
+             <svg width="86" height="62" viewBox="0 0 86 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M86 12.686L83.241 0C63.3756 0.910025 49.6051 9.17535 49.6051 33.4821V61.4603H84.3105V26.2958H71.1667C71.167 18.4966 76.0605 13.9093 86 12.686Z" fill="white"/>
+<path d="M36.3949 12.686L33.6359 0C13.7705 0.910025 0 9.17558 0 33.4823V61.4605H34.7068V26.2958H21.5548C21.5548 18.4966 26.4483 13.9093 36.3949 12.686Z" fill="white"/>
+</svg>
       <p class="card1-text">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
      </div>
      <div class="oberon-bottom-section">
@@ -503,8 +529,10 @@
       </div>
      </div>
     </div>  
-
-
+    </div>
+    
+    <div></div>
+  
     </div>
   </div>
   <div class="dots">
@@ -530,6 +558,22 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js">
+  
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js">
+ 
+</script>
+<script>
+var slider = tns({
+  container: ".my-slider",
+  items: 3,
+  slideBy: "page",
+  autoplay: true,
+ controls: false,
+ autoplayButtonOutput: false,
+});
+</script>
+
   </body>
 </html>
