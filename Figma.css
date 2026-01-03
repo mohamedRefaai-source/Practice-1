@@ -874,7 +874,7 @@ button {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .header-icon {
     display: block;
   }
@@ -896,7 +896,4 @@ button {
   .hero-section-container {
     flex-direction: column;
   }
-}
-
-@media screen {
 }
