@@ -3,7 +3,6 @@ body {
   margin: 0;
 }
 
-
 button {
   cursor: pointer;
 }
@@ -272,31 +271,30 @@ button {
   height: 500px;
 }
 .hero-section8 {
-  padding:0 80px;
+  padding: 0 80px;
 }
 .tns-outer {
   width: 100%;
 }
 
 .tns-nav {
-      display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    gap:10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
 }
 
 .tns-nav button {
-    background-color: grey;
-    border-radius:50%;
-    width: 12px;
-    height: 12px;
-    border: none;
-
-  }
-.tns-nav button.tns-nav-active,.tns-nav button:hover {
-    background-color: #4f9cf9;
+  background-color: grey;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: none;
 }
-
+.tns-nav button.tns-nav-active,
+.tns-nav button:hover {
+  background-color: #4f9cf9;
+}
 
 .container-img3 {
   transform: rotate(90deg);
@@ -470,7 +468,7 @@ button {
   width: 100%;
 }
 
-.card {
+.price-card {
   border: 1px solid #ffe492;
   border-radius: 10px;
   width: 288px;
@@ -869,5 +867,36 @@ button {
 }
 
 .new-dropdown button {
-  color:white;
+  color: white;
+}
+
+.header-icon {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .header-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section-mobile {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-buttons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-section-container {
+    flex-direction: column;
+  }
+}
+
+@media screen {
 }

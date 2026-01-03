@@ -1,4 +1,4 @@
-const plansCards = document.querySelectorAll(".card");
+const plansCards = document.querySelectorAll(".price-card");
 plansCards.forEach((card) => {
   card.addEventListener("click", () => {
     plansCards.forEach((c) => {
