@@ -1,6 +1,7 @@
 body {
   font-family: inter;
   margin: 0;
+  overflow-x: hidden;
 }
 
 button {
@@ -298,8 +299,11 @@ button {
 
 .container-img3 {
   transform: rotate(90deg);
-  height: 490px;
   object-fit: contain;
+  width: 100%;
+}
+
+.image-container {
   width: 50%;
 }
 
